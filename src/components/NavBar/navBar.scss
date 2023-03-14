@@ -1,0 +1,110 @@
+.nav-container {
+    background-color: #171829;
+    position: fixed;
+    font-weight: 500;
+    width: 4vw;
+    height: 100vh;
+    box-shadow: rgb(31, 30, 30) 0px 2px 2px 0px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+
+    &:hover {
+        width: 17vw;
+
+        .nav-item {
+            p {
+                font-size: 1rem !important;
+            }
+
+            .icon {
+                width: 8% !important
+            }
+
+         
+
+
+        }
+        .logo {
+            opacity: 1 !important;
+            width: 80% !important;
+        }
+    }
+
+    .logo-user {
+        width: 100%;
+        height: 20%;
+        padding: 0px 10%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        ::after {
+            content: "";
+            background-color: beige;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .logo {
+            width: 80%;
+            opacity: 0;
+        }
+
+        .user-image {
+            height: 40px;
+            width: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.773);
+            box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    }
+
+    .nav-links {
+        color: white;
+
+        .nav-item {
+            width: 100%;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            font-size: 1rem;
+            line-height: 21px;
+            margin: 2px 0px;
+            cursor: pointer;
+            transition: all 0.1s ease-out;
+            padding-left: 10%;
+
+            &:hover {
+                transform: scale(1.05);
+                text-shadow: 2px 1px 2px rgba(159, 159, 159, 0.3),
+                    0px -2px 2px rgba(255, 255, 255, 0.3);
+            }
+
+            p {
+                font-size: 0px;
+            }
+
+            .icon {
+                width: 100%;
+                margin: 0px 5% 0px 0%;
+                filter: drop-shadow(1px 1px 0px rgba(255, 255, 255, 0.259));
+                transition: all 0.5s ease-out;
+
+
+
+            }
+
+        }
+    }
+}
