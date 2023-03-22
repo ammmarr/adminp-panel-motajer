@@ -2,44 +2,33 @@
     background-color: #171829;
     position: fixed;
     font-weight: 500;
-    width: 4vw;
+    width: 5vw;
+    min-width: 48px;
     height: 100vh;
     box-shadow: rgb(31, 30, 30) 0px 2px 2px 0px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
+    z-index: 100;
 
-    &:hover {
-        width: 17vw;
-
-        .nav-item {
-            p {
-                font-size: 1rem !important;
-            }
-
-            .icon {
-                width: 8% !important
-            }
-
-         
-
-
-        }
-        .logo {
-            opacity: 1 !important;
-            width: 80% !important;
-        }
+    .menu-icon-container {
+        
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
     }
+
 
     .logo-user {
         width: 100%;
-        height: 20%;
+        height: 10%;
         padding: 0px 10%;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         position: relative;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: all ease-in 0.3s;
 
         ::after {
             content: "";
@@ -61,7 +50,6 @@
             width: 40px;
             border: 1px solid rgba(255, 255, 255, 0.773);
             box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
-
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -107,4 +95,42 @@
 
         }
     }
+}
+
+.nav-open {
+    width: 17vw;
+
+    .menu-icon-container {
+        justify-content: end;
+    }
+
+    .nav-item {
+        p {
+            font-size: 1rem !important;
+        }
+
+        .icon {
+            width: 8% !important
+        }
+
+    }
+
+    .logo {
+        opacity: 1 !important;
+        width: 80% !important;
+        display: block;
+        margin: 3% 0px;
+    }
+
+    .logo-user {
+        height: fit-content;
+        opacity: 1;
+    }
+
+    .user-image {
+        margin: 6% 0px;
+    }
+}
+@media screen and (max-width:550px){
+
 }

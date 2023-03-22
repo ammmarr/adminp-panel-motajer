@@ -4,9 +4,9 @@ import { motion } from "framer-motion"
 export default function Package() {
 
     return (
-    <div className="package">
+        <div className="package">
             <h1 className="component-title">Add a Package</h1>
-            <form className="form">
+            <form className="wrapper">
                 <div className="input-row">
                     <div className="input-item">
                         <label>Name in English</label>
@@ -74,6 +74,6 @@ export default function Package() {
                 </div>
                 <button type="submit" className="form-button">ADD</button>
             </form>
-            </div>
+        </div>
     )
 }

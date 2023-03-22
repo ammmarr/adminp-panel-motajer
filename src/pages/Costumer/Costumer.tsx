@@ -2,7 +2,7 @@ export default function Costumer() {
     return (
         <div className="costumer main-component">
             <h1 className="component-title">Add a Costumer</h1>
-            <form className="form">
+            <form className="wrapper">
                 <div className="input-row">
                     <div className="input-item">
                         <label>Name</label>
@@ -13,7 +13,7 @@ export default function Costumer() {
                         <input type="text" />
                     </div>
                 </div>
-               
+
                 <div className="input-row">
                     <div className="input-item">
 

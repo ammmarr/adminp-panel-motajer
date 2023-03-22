@@ -2,7 +2,7 @@ export default function Store() {
     return (
         <div className="store main-component">
             <h1 className="component-title">Add a Store</h1>
-            <form className="form">
+            <form className="wrapper">
                 <div className="input-row">
                     <div className="input-item">
                         <label>Store Name</label>
@@ -62,9 +62,9 @@ export default function Store() {
                     </div>
 
                 </div>
-                
-                
-                
+
+
+
                 <button type="submit" className="form-button">ADD</button>
             </form>
         </div>
